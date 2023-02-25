@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Current Date and Time</title>
+  </head>
+  <body>
+    <p style="text-align:center;font-size:80px;">The exact date and time of where this device is:</p>
+    <h1 id="current-date" style="text-align:center;font-size:100px;"></h1>
+    <h1 id="current-time" style="text-align:center;font-size:100px;"></h1>
+
+    <script>
+      function displayCurrentDateTime() {
+        let now = new Date();
+
+        // Get the current date
+        let day = now.toLocaleString("en-us", { weekday: "long" });
+        let month = now.toLocaleString("en-us", { month: "long" });
+        let date = now.getDate();
+        let year = now.getFullYear();
+
+        // Format the date as a string
+        let current_date = `${day}, ${month} ${date}, ${year}`;
+
+        // Get the current time
+        let hours = now.getHours().toString().padStart(2, "0");
+        let minutes = now.getMinutes().toString().padStart(2, "0");
+        let seconds = now.getSeconds().toString().padStart(2, "0");
+
+        // Format the time as a string
+        let current_time = `${hours}:${minutes}:${seconds}`;
+
+        // Update the HTML elements
+        let current_date_element = document.getElementById("current-date");
+        let current_time_element = document.getElementById("current-time");
+
+        if (current_date !== current_date_element.innerText) {
+          current_date_element.innerText = current_date;
+        }
+
+        if (current_time !== current_time_element.innerText) {
+          current_time_element.innerText = current_time;
+        }
+      }
+
+      displayCurrentDateTime();
+      setInterval(displayCurrentDateTime, 1000);
+    </script>
+  </body>
+</html>
