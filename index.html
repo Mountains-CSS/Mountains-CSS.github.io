@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Current Date and Time</title>
-  </head>
-  <body>
-    <p style="text-align:center;font-size:80px;">The exact date and time of where this device is:</p>
-    <h1 id="current-date" style="text-align:center;font-size:100px;"></h1>
-    <h1 id="current-time" style="text-align:center;font-size:100px;"></h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="https://william.dcis.space/time.html" target="_blank">View The Exact Time</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
 
-    <script>
-      function displayCurrentDateTime() {
-        let now = new Date();
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Roboto:wght@100;400;500;700&display=swap');
 
-        // Get the current date
-        let day = now.toLocaleString("en-us", { weekday: "long" });
-        let month = now.toLocaleString("en-us", { month: "long" });
-        let date = now.getDate();
-        let year = now.getFullYear();
-
-        // Format the date as a string
-        let current_date = `${day}, ${month} ${date}, ${year}`;
-
-        // Get the current time
-        let hours = now.getHours().toString().padStart(2, "0");
-        let minutes = now.getMinutes().toString().padStart(2, "0");
-        let seconds = now.getSeconds().toString().padStart(2, "0");
-
-        // Format the time as a string
-        let current_time = `${hours}:${minutes}:${seconds}`;
-
-        // Update the HTML elements
-        let current_date_element = document.getElementById("current-date");
-        let current_time_element = document.getElementById("current-time");
-
-        if (current_date !== current_date_element.innerText) {
-          current_date_element.innerText = current_date;
+        h1,h2,h3,h4,h5,h6 {
+            font-family:Georgia, 'Times New Roman', Times, serif;
         }
 
-        if (current_time !== current_time_element.innerText) {
-          current_time_element.innerText = current_time;
+        body {
+            font-family:'Open Sans', 'sans serif';
         }
-      }
 
-      displayCurrentDateTime();
-      setInterval(displayCurrentDateTime, 1000);
-    </script>
-  </body>
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: dodgerblue;
+            color: #fff;
+            left:0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            padding: 16px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+
+
+
+    </style>
+</body>
 </html>
