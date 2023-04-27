@@ -14,20 +14,19 @@ nav {
     width: 100%;
     background-color: dodgerblue;
     color: #fff;
-    left:0;
 }
-
+  
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-
+  
 nav li {
-    margin:0 20px;
+    text-align:center;
 }
-
+  
 nav li a {
     display: block;
     padding: 16px;
@@ -35,30 +34,7 @@ nav li a {
     text-align: center;
     text-decoration: none;
 }
-
+  
 nav li a:hover {
     background-color: #111;
-}
-
-.underline-on-hover {
-    display: inline-block;
-    position: relative;
-    color: #333;
-    text-decoration: none;
-    padding-bottom: 2px;
-}
-
-.underline-on-hover::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease-out;
-}
-
-.underline-on-hover:hover::before {
-    width: 100%;
 }
