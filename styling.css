@@ -9,35 +9,35 @@ body {
 }
 
 nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: dodgerblue;
-        color: #fff;
-        left:0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: dodgerblue;
+    color: #fff;
+    left:0;
 }
 
 nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav li {
-        margin:0 20px;
+    margin:0 20px;
 }
 
 nav li a {
-        display: block;
-        padding: 16px;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
+    display: block;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav li a:hover {
-        background-color: #111;
+    background-color: #111;
 }
 
 .underline-on-hover {
@@ -55,7 +55,7 @@ nav li a:hover {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: blue;
+    background-color: white;
     transition: width 0.3s ease-out;
 }
 
