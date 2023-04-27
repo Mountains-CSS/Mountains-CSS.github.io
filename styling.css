@@ -16,18 +16,19 @@ nav {
     color: #fff;
     left:0;
 }
-  
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display:flex;
 }
-  
+
 nav li {
-    float:left;
+    flex:1;
 }
-  
+
 nav li a {
     display: block;
     padding: 16px;
@@ -35,7 +36,7 @@ nav li a {
     text-align: center;
     text-decoration: none;
 }
-  
+
 nav li a:hover {
     background-color: #111;
 }
