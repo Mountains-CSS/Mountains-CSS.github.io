@@ -85,7 +85,7 @@ nav li a:hover {
     color: white;
     background-color: #ff5f5f;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     width: 30px;
     height: 30px;
     cursor: pointer;
