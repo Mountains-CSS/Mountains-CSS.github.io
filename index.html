@@ -26,15 +26,15 @@
     <br>
     <br>
 
-    <img src="https://Mountains-CSS.github.io/Oxygen.png" style="height:150px;width:auto;display:block;margin:0 auto;cursor:zoom-in;" href="#" onclick="imageOverlay()">
-
-    <div class="overlay" id="image-overlay">
-        <div class="card">
-            <h2>Logo</h2>
-            <hr>
-            <button class="close-button" onclick="closeImageOverlay()">&times;</button>
-            <img src="https://Mountains-CSS.github.io/Oxygen.png" style="height:200px;width:auto; display:block;margin:0 auto;">
+    <div class="my-overlay" id="my-overlay">
+        <div class="my-card">
+          <button class="my-close-button" onclick="closeOverlay()">&times;</button>
+          <img class="my-overlay-image" src="https://Mountains-CSS.github.io/Oxygen.png" alt="Overlay Image">
         </div>
+    </div>
+      
+    <div class="my-image-grid">
+        <img src="https://Mountains-CSS.github.io/Oxygen.png" alt="Image 1" onclick="openOverlay('image-1.jpg')">
     </div>
 
 
