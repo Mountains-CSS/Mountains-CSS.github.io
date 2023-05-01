@@ -7,6 +7,7 @@
     <p style="text-align:center;font-size:80px;">The exact date and time of where this device is:</p>
     <h1 id="current-date" style="text-align:center;font-size:100px;"></h1>
     <h1 id="current-time" style="text-align:center;font-size:100px;"></h1>
+    <button class="bottom-button" onclick="previousPage()">Go Home</button>
 
     <script>
       function displayCurrentDateTime() {
@@ -44,6 +45,36 @@
 
       displayCurrentDateTime();
       setInterval(displayCurrentDateTime, 1000);
+      
+      function previousPage() {
+        window.open('https://william.dcis.space', '_blank')
+      }
     </script>
+    
+    <style>
+      .bottom-button {
+        bottom:30px;
+        left:30px;
+        position:fixed;
+        color:white;
+        background-color:dodgerblue;
+        border:1px solid grey;
+        border-radius:10px;
+        width:70px;
+        height:30px;
+        font-family:'Times New Roman', 'sans serif';
+      }
+      
+      .bottom-button:hover {
+        background-color:rgb(88, 172, 255);
+        transition:0.2s ease-in;
+      }
+      
+      .bottom-button:active {
+        background-color:rgb(251, 63, 63);
+        transition:0.1s ease-in;
+      }
+    </style>
+      
   </body>
 </html>
